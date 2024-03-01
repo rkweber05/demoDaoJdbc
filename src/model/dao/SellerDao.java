@@ -11,4 +11,5 @@ public interface SellerDao {
     void deleteById(Integer id);
     Seller findById(Integer id); //pegar o id no banco e consultar ele (se não existe return null;)
     List<Seller> findAll();
+    List<Seller> findByDepartment(Department department);
 }
